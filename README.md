@@ -1,7 +1,7 @@
 # Git cheat sheet
 
 ## Reference 
-  [廖雪峰的git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
+  [廖雪峰的git教程](https://www.liaoxuefeng.com/wiki/896043488029600)    :thumbsup:
 
 
 ## 1. Install git
