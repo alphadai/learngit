@@ -55,4 +55,5 @@ $ git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01" \
 ###### 撤消操作
 ~~~
 $ git commit --amend
+$ git reset HEAD <file>
 ~~~
