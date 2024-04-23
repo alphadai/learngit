@@ -1,6 +1,7 @@
 # Git cheat sheet
 
 ## Reference 
+  [Pro Git](https://git-scm.com/book/zh/v2)                    :thumbsup:
   [廖雪峰的git教程](https://www.liaoxuefeng.com/wiki/896043488029600)    :thumbsup:
 
 

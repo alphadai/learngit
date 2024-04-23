@@ -57,3 +57,64 @@ $ git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01" \
 $ git commit --amend
 $ git reset HEAD <file>
 ~~~
+
+##### 远程仓库的使用
+~~~
+获取远程仓库
+$ git clone https://github.com/schacon/ticgit
+
+显示远程仓库
+$ git remote -v
+
+添加远程仓库
+$ git remote add pb https://github.com/paulboone/ticgit
+
+从远程仓库中抓取与拉取，不覆盖本地工作区
+$ git fetch <remote>
+
+从远程仓库中抓取与拉取，merge到本地工作区
+$ git pull
+
+当你想要将 master 分支推送到 origin 服务器时
+$ git push origin master
+
+远程仓库的重命名与移除
+$ git remote rename pb paul
+
+$ git remote remove paul
+~~~
+
+##### 打标签
+~~~
+列出标签
+$ git tag
+
+创建标签 --- Git 支持两种标签: 轻量标签（lightweight）与附注标签（annotated）。
+附注标签
+$ git tag -a v1.4 -m "my version 1.4"
+
+轻量标签
+$ git tag v1.4-lw
+
+后期打标签
+$ git tag -a v1.2 9fceb02
+
+共享标签 --- 默认情况下，git push 命令并不会传送标签到远程仓库服务器上
+$ git push origin <tagname>。
+$ git push origin --tags
+
+删除标签
+git tag -d <tagname>
+注意上述命令并不会从任何远程仓库中移除这个标签，你必须用 git push <remote> :refs/tags/<tagname> 来更新你的远程仓库
+$ git push origin :refs/tags/v1.4-lw
+
+$ git push origin --delete <tagname>
+
+检出标签
+如果你想查看某个标签所指向的文件版本，可以使用 git checkout 命令， 虽然这会使你的仓库处于“分离头指针（detached HEAD）”的状态——这个状态有些不好的副作用.
+
+那么通常需要创建一个新分支：
+$ git checkout -b version2 v2.0.0
+Switched to a new branch 'version2'
+~~~
+
