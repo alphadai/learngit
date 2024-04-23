@@ -6,4 +6,4 @@ Create dev branch
 
 develpping feature on dev branch ...
 
-rebase 
+edit this line on dev branch
