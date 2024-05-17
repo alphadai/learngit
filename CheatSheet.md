@@ -78,6 +78,10 @@ $ git pull
 当你想要将 master 分支推送到 origin 服务器时
 $ git push origin master
 
+将本地得featureB推送到远程的featureBee，并设置featureB关联featureBee
+$ git push -u origin featureB:featureBee
+
+
 远程仓库的重命名与移除
 $ git remote rename pb paul
 
