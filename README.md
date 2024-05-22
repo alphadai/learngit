@@ -28,9 +28,15 @@ download form https://www.liaoxuefeng.com/wiki/896043488029600 and install
 
 ## 2 Config git
 
+* --system选项，针对系统上所有用户生效
+* --global选项，针对当前用户生效
+* --local选项，针对所在的仓库生效
 ~~~
 $ git config --global user.name "Your Name"
+
 $ git config --global user.email "email@example.com"
+
+$ git config --global core.editor emacs
 ~~~
 
 
@@ -75,3 +81,5 @@ To github.com:michaelliao/learngit.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ~~~
+
+## 5. 
