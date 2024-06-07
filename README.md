@@ -82,4 +82,4 @@ To github.com:michaelliao/learngit.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ~~~
 
-## 5. 
+## 5.  
